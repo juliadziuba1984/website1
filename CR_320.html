@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Mobile website</title>
+    <meta name="description" content="">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    
+
+    <link rel="stylesheet" type="text/css" href="css/chronoland.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+    <!--Default libraries-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/smoothness/jquery-ui.css">
+    <script type="text/javascript" src="js/html5.js" ></script>
+    <!--/Default libraries-->
+
+    <!--Form styler or select fieds-->
+    <script type="text/javascript" src="js/formstyler/jquery.formstyler.min.js" ></script>
+    <link rel="stylesheet" type="text/css" href="js/formstyler/jquery.formstyler.css">
+    <!--/Form styler-->
+
+    <!--Validator-->
+    <script type="text/javascript" src="js/jquery.form-validator.js"></script>
+    <!--/Validator-->
+
+
+
+    <!--Google map-->
+    <script type="text/javascript" src="js/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false&amp;language=ru"></script>
+    <script type="text/javascript" src="https://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/src/infobox.js"></script>
+    <!--/Google map-->
+
+
+    <script type="text/javascript" src="js/jquery.mousewheel.js" ></script>
+
+	<script type="text/javascript" src="js/jquery.maskedinput.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo.js" ></script>
+    <script type="text/javascript" src="js/chronoland.js" ></script>
+  </head>
+  
+  
+  <body>
+<!--catalog_filter_block-->
+  <div class="catalog_filter_block js_catalog_filter_block">
+    	<div class="btn_filter_close js_btn_filter_close"></div>
+    	<div class="catalog_filter_block_inner">
+        	<a href="#" class="icon_btn_filter_close js_icon_btn_filter_close"></a>
+        	<div class="title_block">ПОДОБРАТЬ ЧАСЫ</div>
+            <form>
+            	<div class="content_inner">
+                    <div class="checkbox_field">
+                        <label class="checkbox_label">
+                            <input type="checkbox" >
+                            <span class="label-text">Новые часы</span>                        
+                        </label>
+                    </div>
+                    <div class="checkbox_field">
+                        <label class="checkbox_label">
+                            <input type="checkbox" >
+                            <span class="label-text">Б/У часы</span>                        
+                        </label>
+                    </div>
+                </div>
+                
+                <!--BEGIN REVEALING LIST BLOCKS-->
+                    <div class="revealing_list_2">
+                   		<!--begin revealing list block-->
+                        <div class="revealing_list_holder js_holder">
+                            <div class="revealing_list_heading js_heading">
+                                <span class="title">Пол</span>                             
+                            </div>
+                            <div class="revealing_list_block js_block">
+                               <div class="checkbox_field">
+                                    <label class="checkbox_label">
+                                        <input type="checkbox" >
+                                        <span class="label-text">Женские</span>                        
+                                    </label>
+                                </div>
+                                <div class="checkbox_field">
+                                    <label class="checkbox_label">
+                                        <input type="checkbox" >
+                                        <span class="label-text">Мужские</span>                        
+                                    </label>
+                                </div>
+                                <div class="checkbox_field">
+                                    <label class="checkbox_label">
+                                        <input type="checkbox" >
+                                        <span class="label-text">Унисекс</span>                        
+                                    </label>
+                                </div>
+							</div>
+                        </div>
+                         <!--end revealing list block-->
+                         
+                         <!--begin revealing list block-->
+                        <div class="revealing_list_holder js_holder">
+                            <div class="revealing_list_heading js_heading">
+                                <span class="title">Бренд</span>                             
+                            </div>
+                            <div class="revealing_list_block js_block">
+                            	<div class="checkbox_field">
+                                    <label class="checkbox_label">
+                                        <input type="checkbox" >
+                                        <span class="label-text">A. Lange and Sohne</span>                        
+                                    </label>
+                                </div>
+                               <div class="checkbox_field">
+                                    <label class="checkbox_label">
+                                        <input type="checkbox" >
+                                        <span class="label-text">Arnold & Son</span>                        
+                                    </label>
+                                </div>
+                                <div class="checkbox_field">
+                                    <label class="checkbox_label">
+                                        <input type="checkbox" >
+                                        <span class="label-text">Audemars Piguet</span>                        
+                                    </label>
+                                </div>
+                                
+                                <div class="checkbox_field">
+                                    <label class="checkbox_label">
+                                        <input type="checkbox" >
+                                        <span class="label-text">Bovet</span>                        
+                                    </label>
+                                </div>
+                                <div class="checkbox_field">
+                                    <label class="checkbox_label">
+                                        <input type="checkbox" >
+                                        <span class="label-text">Breguet</span>                        
+                                    </label>
+                                </div>
+                                <div class="checkbox_field">
+                                    <label class="checkbox_label">
+                                        <input type="checkbox" >
+                                        <span class="label-text">Cartier</span>                        
+                                    </label>
+                                </div>
+                                <div class="checkbox_field">
+                                    <label class="checkbox_label">
+                                        <input type="checkbox" >
+                                        <span class="label-text">Chaumet</span>                        
+                                    </label>
+                                </div>
+                                <div class="checkbox_field">
+                                    <label class="checkbox_label">
+                                        <input type="checkbox" >
+                                        <span class="label-text">Chopard</span>                        
+                                    </label>
+                                </div>
+                                <div class="checkbox_field">
+                                    <label class="checkbox_label">
+                                        <input type="checkbox" >
+                                        <span class="label-text">Corum</span>                        
+                                    </label>
+                                </div>
+                                <div class="checkbox_field">
+                                    <label class="checkbox_label">
+                                        <input type="checkbox" >
+                                        <span class="label-text">Cvstos</span>                        
+                                    </label>
+                                </div>
+                                <div class="checkbox_field">
+                                    <label class="checkbox_label">
+                                        <input type="checkbox" >
+                                        <span class="label-text">de Grisogono</span>                        
+                                    </label>
+                                </div>
+                                <div class="checkbox_field">
+                                    <label class="checkbox_label">
+                                        <input type="checkbox" >
+                                        <span class="label-text">DeWitt</span>                        
+                                    </label>
+                                </div>
+                                <div class="checkbox_field">
+                                    <label class="checkbox_label">
+                                        <input type="checkbox" >
+                                        <span class="label-text">Franck Muller</span>                        
+                                    </label>
+                                </div>
+                                <div class="checkbox_field">
+                                    <label class="checkbox_label">
+                                        <input type="checkbox" >
+                                        <span class="label-text">Girard-Perregaux</span>                        
+                                    </label>
+                                </div>
+                                <div class="checkbox_field">
+                                    <label class="checkbox_label">
+                                        <input type="checkbox" >
+                                        <span class="label-text">Graham</span>                        
+                                    </label>
+                                </div>
+							</div>
+                        </div>
+
+
+                         <!--end revealing list block-->
+                         <!--begin revealing list block-->
+                        <div class="revealing_list_holder js_holder">
+                            <div class="revealing_list_heading js_heading">
+                                <span class="title">Форма корпуса</span>                             
+                            </div>
+                            <div class="revealing_list_block js_block">
+                               <div class="checkbox_field">
+                                    <label class="checkbox_label">
+                                        <input type="checkbox" >
+                                        <span class="label-text">бочка</span>                        
+                                    </label>
+                                </div>
+                                <div class="checkbox_field">
+                                    <label class="checkbox_label">
+                                        <input type="checkbox" >
+                                        <span class="label-text">квадрат</span>                        
+                                    </label>
+                                </div>
+                                <div class="checkbox_field">
+                                    <label class="checkbox_label">
+                                        <input type="checkbox" >
+                                        <span class="label-text">круг</span>                        
+                                    </label>
+                                </div>
+                                <div class="checkbox_field">
+                                    <label class="checkbox_label">
+                                        <input type="checkbox" >
+                                        <span class="label-text">круглая</span>                        
+                                    </label>
+                                </div>
+                                <div class="checkbox_field">
+                                    <label class="checkbox_label">
+                                        <input type="checkbox" >
+                                        <span class="label-text">прямоугольник</span>                        
+                                    </label>
+                                </div>
+                                <div class="checkbox_field">
+                                    <label class="checkbox_label">
+                                        <input type="checkbox" >
+                                        <span class="label-text">Скелетон</span>                        
+                                    </label>
+                                </div>
+							</div>
+                        </div>
+                         <!--end revealing list block-->
+                         <!--begin revealing list block-->
+                        <div class="revealing_list_holder js_holder">
+                            <div class="revealing_list_heading js_heading">
+                                <span class="title">Ограниченная серия</span>                             
+                            </div>
+                            <div class="revealing_list_block js_block">
+                               <div class="checkbox_field">
+                                    <label class="checkbox_label">
+                                        <input type="checkbox" >
+                                        <span class="label-text">да</span>                        
+                                    </label>
+                                </div>
+                                <div class="checkbox_field">
+                                    <label class="checkbox_label">
+                                        <input type="checkbox" >
+                                        <span class="label-text">Мужские</span>                        
+                                    </label>
+                                </div>
+                                
+							</div>
+                        </div>
+                         <!--end revealing list block-->
+                      </div>
+                <!--END REVEALING LIST BLOCKS-->
+                <a href="" class="btn_catalog_filter">Подобрать</a>
+            </form>
+        </div>
+    </div>
+<!--end catalog_filter_block-->    
+
+
+
+<!--menu_block-->
+     <div class="menu_block_holder js_menu_block">
+     	<div class="menu_block_inner">
+            <div class="menu_block">
+      			<div class="btn_menu"><a href="" class="link_menu">Каталог</a></div>
+                <div class="btn_menu"><a href="" class="link_menu">О ломбарде</a></div>
+                <div class="btn_menu">
+                	<a href="" class="link_menu js_link_menu">Полезная информация</a>
+                	<div class="submenu_block js_submenu_block">
+                    	<div><a href="" class="link_sub_menu">Полезная информация</a></div>
+                        <div><a href="" class="link_sub_menu">Новости</a></div>
+                        <div><a href="" class="link_sub_menu">Статьи </a></div>
+                        <div><a href="" class="link_sub_menu">Вопрос-ответ</a></div>
+                        <div><a href="" class="link_sub_menu">Часовые технологии</a></div>
+                        <div><a href="" class="link_sub_menu">Словарь терминов</a></div>
+                    </div>
+                </div>
+                <div class="btn_menu"><a href="" class="link_menu">Скупка часов</a></div>
+                <div class="btn_menu"><a href="" class="link_menu">Скупка бриллиантов</a></div>
+                <div class="btn_menu"><a href="" class="link_menu">Кредит под залог часов</a></div>
+                <div class="btn_menu"><a href="" class="link_menu">Экспертиза</a></div>
+                <div class="btn_menu"><a href="" class="link_menu">Онлайн-оценка часов</a></div>
+                <div class="btn_menu"><a href="" class="link_menu">Trade-in часов</a></div>
+                <div class="btn_menu"><a href="" class="link_menu">Ремонт часов</a></div>
+                <div class="btn_menu"><a href="" class="link_menu">Бренды</a></div>
+                <div class="btn_menu"><a href="" class="link_menu">Карта сайта</a></div>
+                <div class="btn_menu"><a href="" class="link_menu">Контакты</a></div>
+            </div>
+            
+            
+
+            <div class="block_city_select custom_select city_select js_select">
+              <select class="">
+                <option value="0">Москва</option>
+                <option value="1">Санкт-Петербург</option>
+                <option value="2">Екатеринбург</option>
+              </select>
+              </div>
+              
+              <div class="phone_apps_panel">
+              	<a href="tel:+74953638356" class="phone_number"><span>+7 (495)</span> 363-83-56</a>
+
+                <div>
+                	<a href="tel:+74953638356" class="icon_app icon_watsApp">WhatsApp</a>
+                    <a href="tel:+74953638356" class="icon_app icon_viber">Viber</a>
+                    <a href="tel:+74953638356" class="icon_app icon_telegram">Telegram</a>
+                </div>
+              </div>
+
+
+              <div class="sidebar-contacts_phones"><a href="tel: +74953638356">+7 (495) 363-83-56</a><a href="tel: +79199999969">+7 (919) 999-99-69</a> <a href="tel:+79099359595">+7 (909) 935-95-95</a></div>
+              <div class="sidebar-contacts_phones"><a href="tel: +79199999969">+7 (919) 999-99-69</a><a href="tel: +79099359595">+7 (909) 935-95-95</a></div>
+              <div class="sidebar-contacts_phones"><a href="tel: +79199999969">+7 (919) 999-99-69</a><a href="tel: +79099359595">+7 (909) 935-95-95</a><a href="tel: +79099359597">+7 (909) 935-95-97</a></div>
+
+              <div class="footer_text">Элитные телефоны <a href="http://www.vipvertu.ru">vipvertu.ru</a></div>
+              <div class="footer_copyright">&copy; Chronoland</div>
+
+         </div>
+     </div>
+
+  	<a href="#" class="btn_show_menu js_btn_menu"></a>
+<!--menu_block-->
+
+<div class="page">
+	<div class="page_wrapper">
+
+        <!--BEGIN HEADER AND CONTENT -->
+        <div class="header_and_content_holder">
+        	<!--header-->
+        	<div class="header">
+
+            	<div class="header_inner">
+
+                    <div class="logo_block">
+                        <div class="logo"><img src="i/logo.png" alt="" title=""></div>
+                        Ломбард часов в Москве
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <a href="#" class="icon_site_search js_icon_site_search"></a>
+
+            </div>
+            <!--end header-->
+            
+            
+
+            <div class="heading_block white_block">
+                <div class="content_inner">
+                	<div class="btns_filter_sort">
+                    <div class="custom_select filter_select js_select">
+                        <select>
+                            <option>По популярности</option>
+                            <option>По цене</option>
+                            <option>По рейтингу</option>
+                            <option>По отзывам</option>
+                        </select>
+                    </div>
+                    <a href="#" class="btn_filter js_btn_filter"></a>
+                </div>
+                <h1>Каталог</h1>
+            </div>
+
+
+            
+            
+            <!--content-->
+            <div class="content white_block">
+                  <!--BEGIN TABS-->
+                    <div class="tabs">
+                        <div class="tab_links">
+                            <a href="#" data-tab="tab_section1" class="active"><span>Последние  поступления</span> </a>
+                            <a href="#" data-tab="tab_section2"><span>Спецпредложения</span></a>                        
+                        </div>
+                            
+                     <!--begin tab block holder-->  
+                        <div class="tab_block_holder">
+                        <!--TAB 1-->
+                        
+                        <div id="tab_section1" class="hidden_content active">
+                            <div class="tab_block">
+                                	<!--catalog_block-->
+                                    <div class="catalog_block">
+                                        <div class="block">
+                                            <div class="image_block">
+                                                <img src="i/temp/img_catalog.png" alt="" title="">
+                                                <a href="#" class="icon_add_to_favorite"></a>                                            
+                                            </div>
+                                            <div class="type_block new">НОВЫЕ ЧАСЫ</div>
+                                            <div class="name_block">Ulysse Nardin Sonata Streamline 21500</div>
+                                            <div class="price_block">5 500 $</div>
+                                            <a href="#" class="btn_catalog_item_more">Узнать больше</a>                                        
+                                        </div>
+                                        <div class="block">
+                                            <div class="image_block">
+                                                <img src="i/temp/img_catalog.png" alt="" title="">
+                                                <a href="#" class="icon_add_to_favorite"></a>                                            
+                                            </div>
+                                            <div class="type_block old">Б/У ЧАСЫ</div>
+                                            <div class="name_block">Ulysse Nardin Sonata Streamline 21500</div>
+                                            <div class="price_block">5 500 $</div>
+                                            <a href="#" class="btn_catalog_item_more">Узнать больше</a>                                        
+                                         </div>
+                                        <div class="block">
+                                            <div class="image_block">
+                                                <img src="i/temp/img_catalog.png" alt="" title="">
+                                                <a href="#" class="icon_add_to_favorite"></a>                                           
+                                            </div>
+                                            <div class="type_block new">НОВЫЕ ЧАСЫ</div>
+                                            <div class="name_block">Ulysse Nardin Sonata Streamline 21500</div>
+                                            <div class="price_block">5 500 $</div>
+                                            <a href="#" class="btn_catalog_item_more">Узнать больше</a>                                        
+                                        </div>
+                                        <div class="block">
+                                            <div class="image_block">
+                                                <img src="i/temp/img_catalog.png" alt="" title="">
+                                                <a href="#" class="icon_add_to_favorite"></a>                                           
+                                            </div>
+                                            <div class="type_block old">Б/У ЧАСЫ</div>
+                                            <div class="name_block">Ulysse Nardin Sonata Streamline 21500</div>
+                                            <div class="price_block">5 500 $</div>
+                                            <a href="#" class="btn_catalog_item_more">Узнать больше</a>                                        
+                                        </div>
+                                        <div class="clear"></div>
+                                        <div class="link_catalog_view_all_holder">
+                                            <a href="#" class="link_catalog_view_all">Смотреть все часы</a>                                        
+                                        </div>
+                                    </div>
+                                    <!--end catalog_block-->
+                             </div>
+                        </div>
+                         <!--END OF TAB 1-->
+                         
+                         <!--TAB 2-->
+                        <div id="tab_section2" class="hidden_content">
+                            <div class="tab_block">
+                                	<!--catalog_block-->
+                                    <div class="catalog_block">
+                                        <div class="block">
+                                            <div class="image_block">
+                                                <img src="i/temp/img_catalog.png" alt="" title="">
+                                                <a href="#" class="icon_add_to_favorite"></a>                                            
+                                            </div>
+                                            <div class="type_block new">НОВЫЕ ЧАСЫ</div>
+                                            <div class="name_block">Ulysse Nardin Sonata Streamline 21500</div>
+                                            <div class="price_block">5 500 $</div>
+                                            <a href="#" class="btn_catalog_item_more">Узнать больше</a>                                        
+                                        </div>
+                                        <div class="block">
+                                            <div class="image_block">
+                                                <img src="i/temp/img_catalog.png" alt="" title="">
+                                                <a href="#" class="icon_add_to_favorite"></a>                                            
+                                            </div>
+                                            <div class="type_block old">Б/У ЧАСЫ</div>
+                                            <div class="name_block">Ulysse Nardin Sonata Streamline 21500</div>
+                                            <div class="price_block">5 500 $</div>
+                                            <a href="#" class="btn_catalog_item_more">Узнать больше</a>                                        
+                                         </div>
+                                        <div class="block">
+                                            <div class="image_block">
+                                                <img src="i/temp/img_catalog.png" alt="" title="">
+                                                <a href="#" class="icon_add_to_favorite"></a>                                           
+                                            </div>
+                                            <div class="type_block new">НОВЫЕ ЧАСЫ</div>
+                                            <div class="name_block">Ulysse Nardin Sonata Streamline 21500</div>
+                                            <div class="price_block">5 500 $</div>
+                                            <a href="#" class="btn_catalog_item_more">Узнать больше</a>                                        
+                                        </div>
+                                        <div class="block">
+                                            <div class="image_block">
+                                                <img src="i/temp/img_catalog.png" alt="" title="">
+                                                <a href="#" class="icon_add_to_favorite"></a>                                           
+                                            </div>
+                                            <div class="type_block old">Б/У ЧАСЫ</div>
+                                            <div class="name_block">Ulysse Nardin Sonata Streamline 21500</div>
+                                            <div class="price_block">5 500 $</div>
+                                            <a href="#" class="btn_catalog_item_more">Узнать больше</a>                                        
+                                        </div>
+                                        <div class="clear"></div>
+                                        <div class="link_catalog_view_all_holder">
+                                            <a href="#" class="link_catalog_view_all">Смотреть все часы</a>                                        
+                                        </div>
+                                    </div>
+                                    <!--end catalog_block-->
+                             </div>
+                        </div>
+                         <!--END OF TAB 2-->
+                 	 </div>
+                     <!--end tab block holder-->  
+                  </div>
+                  <!--END TABS-->
+                  
+                  
+                  
+                  
+                  <div class="content_inner ">
+                  	<h2>Ломбард Chronoland в Москве</h2>
+                    <p class="italic_text grey_text">Престижные швейцарские часы это способ самовыражения и символ статуса. По часам можно определить характер хозяина. Одного взгяла на запястье достаточно, чтобы определить кто перед вами.</p> 
+                    
+                    <p>В нашем ломбарде часов продаются только подлинные произведения часового искусства. Все хронометры имеют полный набор аксессуаров, оригинальную упаковку и гарантию производителя. Ломбард принимает заказы на любые модели часов, что позволяет нам удовлетворить даже клиентов с самым изысканным вкусом, а наша география доставки позволяет заказать часы практически в любой точке России.</p>
+                  </div>
+                  
+                  
+                  
+
+            </div>
+            <!--end content-->
+        </div>
+    </div>
+    <!--END HEADER AND CONTENT -->
+    
+    
+    
+    
+        <!--BEGIN FOOTER-->
+        <div class="footer_holder">
+        	<!--links_block-->
+               <div class="links_block">
+                    <a href="#" class="block">
+                        <div class="image_block">
+                            <img src="i/icons/icon_link_1.png" alt="" title="">                        
+                        </div>
+                        <div class="text_block">часы</div>
+                    </a>
+                    <a href="#" class="block">
+                        <div class="image_block">
+                            <img src="i/icons/icon_link_2.png" alt="" title="">                        
+                        </div>
+                        <div class="text_block">ювелирные <br>изделия</div>
+                    </a>
+                    <a href="#" class="block">
+                        <div class="image_block">
+                            <img src="i/icons/icon_link_3.png" alt="" title="">                        
+                        </div>
+                        <div class="text_block">продать</div>
+                    </a>
+                    <a href="#" class="block">
+                        <div class="image_block">
+                            <img src="i/icons/icon_link_4.png" alt="" title="">                        
+                        </div>
+                        <div class="text_block">избранное</div>
+                    </a>               
+                 </div>
+              <!--end links_block-->
+        
+        	<!--footer_top_block-->
+            <div class="footer_top_block">
+            	<div class="footer_phone"><span>+7 (926)</span> 561-57-77</div>
+                <div class="social_icons_block">
+                	<a href="#" class="block icon_1">WhatsApp</a>
+                    <a href="#" class="block icon_2">Viber</a>
+                    <a href="#" class="block icon_3">Telegram</a>
+                </div>
+            </div>
+            <!--footer_top_block-->
+            
+            <!--footer_bottom_block-->
+            <div class="footer_bottom_block">
+            	<div class="footer_text">Элитные телефоны <a href="http://www.vipvertu.ru">vipvertu.ru</a></div>
+                <div class="footer_copyright">&copy; Chronoland</div>
+            </div>
+            <!--end footer_bottom_block-->
+            
+        </div>
+        <!--END FOOTER-->
+        
+        
+    </div>
+  </div>
+
+  </body>
+  
+</html>
